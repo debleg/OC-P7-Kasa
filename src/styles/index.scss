@@ -1,0 +1,11 @@
+@import //global
+  "./resets",
+  "./variables",
+  //pages
+  "../components/pages/home",
+  "../components/pages/about", "../components/pages/error-page",
+  //organisms
+  "../components/organisms/header",
+  "../components/organisms/footer",
+  //molecules
+  "../components/molecules/navigation";
