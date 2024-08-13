@@ -1,0 +1,13 @@
+.header {
+  padding: 40px 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include responsive(medium) {
+    padding: 40px;
+  }
+  @include responsive(small) {
+    padding: 20px;
+  }
+}
