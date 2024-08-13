@@ -1,0 +1,42 @@
+.banner {
+  position: relative;
+  &__img {
+    filter: brightness(0.4);
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    @include responsive(medium) {
+      height: 160px;
+    }
+    @include responsive(intermediate) {
+      height: 111px;
+    }
+  }
+  &__text {
+    padding: 16px;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 1px black;
+    @include responsive(medium) {
+      font-size: 32px;
+    }
+    @include responsive(intermediate) {
+      font-size: 24px;
+    }
+    @include responsive(small) {
+      font-size: 24px;
+      left: 0;
+      transform: translate(0%, -50%);
+      width: 225px;
+      text-align: left;
+    }
+  }
+}
