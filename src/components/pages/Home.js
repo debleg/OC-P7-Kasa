@@ -1,14 +1,20 @@
 import React from "react";
-import Banner from "../atoms/Banner"
-import HomeBanner from "../../images/home-banner-img.png"
+import Banner from "../atoms/Banner";
+import HomeBanner from "../../images/home-banner-img.png";
+import Card from "../atoms/Card"
 
-const homeBannerText = "Chez vous, partout et ailleurs"
+
 const Home = () => {
-    return (
-        <div className="homepage">
-        <Banner bannerImg = {HomeBanner} bannerText = {homeBannerText}/>
-        </div>
-    )
-}
+ const homeBannerText = "Chez vous, partout et ailleurs";
+
+  return (
+    <div className="homepage">
+      <Banner bannerImg={HomeBanner} bannerText={homeBannerText} />
+      <div className="accomodation">
+        <Card />
+      </div>
+    </div>
+  );
+};
 
 export default Home;
