@@ -1,0 +1,40 @@
+#root {
+  min-width: 320px;
+  max-width: 1440px; //needs a way to add space past a certain width (see p4?)
+}
+
+// body {
+//   min-width: 320px;
+//   max-width: 1440px;
+// }
+
+// responsive
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == small {
+    @media screen and (max-width: 640px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == intermediate {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium {
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == largest {
+    @media screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+}

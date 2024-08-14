@@ -1,0 +1,33 @@
+.homepage {
+  margin: 0 100px;
+  @include responsive(medium) {
+    margin: 0 40px;
+  }
+  @include responsive(small) {
+    margin: 0 20px;
+  }
+}
+
+.accomodation {
+  background-color: $background-medium-grey;
+  border-radius: 25px;
+  margin-top: 43px;
+  margin-bottom: 50px;
+  padding: 56px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  column-gap: 60px;
+  row-gap: 50px;
+  justify-items: center;
+  @include responsive(medium) {
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  @include responsive(small) {
+    background-color: transparent;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 26px;
+    row-gap: 18px;
+  }
+}

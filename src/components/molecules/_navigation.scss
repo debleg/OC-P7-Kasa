@@ -1,0 +1,26 @@
+.navigation {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+
+    @include responsive(medium) {
+      gap: 26px;
+    }
+  }
+  &__item {
+    font-size: 24px;
+    @include responsive(medium) {
+      font-size: 18px;
+    }
+    @include responsive(small) {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+  &__link {
+    &--active {
+      border-bottom: 2px solid black;
+    }
+  }
+}
