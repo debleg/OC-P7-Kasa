@@ -2,17 +2,24 @@ import React from "react";
 import Logements from "../../data/logements.json";
 
 const Card = () => {
-  const cardTitle = Logements[1]["title"];
-  const cardImgSrc = Logements[1]["cover"];
+  const coverimage = Logements.map((accomodation) => ({
+    title: accomodation.title,
+    cover: accomodation.cover,
+  }));
+
   return (
-    <div className="card">
-      <img
-        className="card__img"
-        alt="Image du logement*insert something here*"
-        src={cardImgSrc}
-      />
-      <p className="card__title">{cardTitle}</p>
-    </div>
+    <>
+      {coverimage.map((accomodation, index) => (
+        <div className="card" key={index}>
+          <img
+            className="card__img"
+            alt={accomodation.title}
+            src={accomodation.cover}
+          />
+          <p className="card__title">{accomodation.title}</p>
+        </div>
+      ))}
+    </>
   );
 };
 
