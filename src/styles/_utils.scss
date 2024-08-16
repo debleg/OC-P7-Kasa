@@ -64,10 +64,10 @@ $icons-grey: #e3e3e3;
     margin: 0 40px;
   }
   @include responsive(intermediate) {
-    height: calc(100vh - (127px + 207px));
+    min-height: calc(100vh - (127px + 207px));
   }
   @include responsive(small) {
-    height: calc(100vh - (87px + 207px));
+    min-height: calc(100vh - (87px + 207px));
     margin: 0 20px;
   }
 }
