@@ -1,8 +1,11 @@
 import React from "react";
-function About() {
+import Banner from "../../atoms/banner/Banner";
+import AboutBanner from "../../../images/about-banner-img.png"
+
+const About = () => {
     return (
-      <div>
-        
+      <div className="aboutpage">
+        <Banner bannerImg={AboutBanner} bannerImgBrightness="0.4"/>
 
       </div>
     );

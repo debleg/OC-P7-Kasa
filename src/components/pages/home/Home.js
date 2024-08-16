@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div className="homepage">
-      <Banner bannerImg={HomeBanner} bannerText={homeBannerText} />
+      <Banner bannerImg={HomeBanner} bannerImgBrightness="0.4" bannerText={homeBannerText} />
       <div className="accommodation">
         <Card />
       </div>
