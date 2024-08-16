@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About"
-import ErrorPage from "./components/pages/ErrorPage"
+import Home from "./components/pages/home/Home";
+import About from "./components/pages/about/About"
+import ErrorPage from "./components/pages/error/ErrorPage"
 // import pagespecific to data here
 import Layout from "./Layout";
 

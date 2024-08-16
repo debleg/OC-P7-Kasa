@@ -1,5 +1,5 @@
 import React from "react";
-import Logements from "../../data/logements.json";
+import Logements from "../../../data/logements.json";
 
 const Card = () => {
   const coverimage = Logements.map((accommodation) => ({

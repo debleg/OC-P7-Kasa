@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "../atoms/Banner";
-import HomeBanner from "../../images/home-banner-img.png";
-import Card from "../atoms/Card"
+import Banner from "../../atoms/banner/Banner";
+import HomeBanner from "../../../images/home-banner-img.png";
+import Card from "../../atoms/card/Card"
 
 
 const Home = () => {

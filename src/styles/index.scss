@@ -2,13 +2,13 @@
   "./resets",
   "./utils",
   //pages
-  "../components/pages/home",
-  "../components/pages/about", "../components/pages/error-page",
+  "../components/pages/home/home",
+  "../components/pages/about/about", "../components/pages/error/error-page",
   //organisms
-  "../components/organisms/header",
-  "../components/organisms/footer",
+  "../components/organisms/header/header",
+  "../components/organisms/footer/footer",
   //molecules
-  "../components/molecules/navigation",
+  "../components/molecules/navigation/navigation",
   //atoms
-  "../components/atoms/banner",
-  "../components/atoms/card";
+  "../components/atoms/banner/banner",
+  "../components/atoms/card/card";
