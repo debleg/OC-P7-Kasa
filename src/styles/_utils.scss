@@ -1,0 +1,73 @@
+//this partial regroups
+//- typography
+//- fonts
+//- responsive rules
+//- global mixins
+
+//typography
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.bold-font {
+  //only other weight used in mockup
+  font-weight: 700;
+}
+
+//colors
+$main-accent-color: #ff6060;
+$background-medium-grey: #f6f6f6;
+$icons-grey: #e3e3e3;
+
+// responsive
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == small {
+    @media screen and (max-width: 640px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == intermediate {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium {
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == largest {
+    @media screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+//this mixin is used for the main content of pages, and fixes the footer where it belongs
+
+@mixin pagecontent() {
+  min-width: 320px;
+  max-width: 1440px;
+  min-height: calc(100vh - (148px + 207px));
+  margin: 0 100px;
+  @include responsive(medium) {
+    margin: 0 40px;
+  }
+  @include responsive(intermediate) {
+    height: calc(100vh - (127px + 207px));
+  }
+  @include responsive(small) {
+    height: calc(100vh - (87px + 207px));
+    margin: 0 20px;
+  }
+}
