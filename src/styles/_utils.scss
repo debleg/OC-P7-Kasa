@@ -9,13 +9,13 @@
 
 body {
   font-family: "Montserrat";
-  font-weight: 500;
+  font-weight: 500; //medium
+  line-height: 1.426;
 }
 
-.bold-font {
-  //only other weight used in mockup
-  font-weight: 700;
-}
+$font-medium: 500; //default
+$font-bold: 700;
+$font-regular: 400;
 
 //colors
 $main-accent-color: #ff6060;
