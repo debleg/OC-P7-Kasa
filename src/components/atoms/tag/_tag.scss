@@ -1,0 +1,19 @@
+.tag {
+  background-color: $main-accent-color;
+  color: white;
+  height: 25px;
+  min-width: 85px; //initial 115
+  padding: 0 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include responsive(small) {
+    height: 18px;
+    padding: 0 10px;
+    min-width: 64px; //initial 84
+    font-size: 10px;
+  }
+}
