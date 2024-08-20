@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Navigation from "../molecules/Navigation";
-import largeLogo from "../../images/logo-large.png";
-import mediumLogo from "../../images/logo-medium.png";
+import Navigation from "../../molecules/navigation/Navigation";
+import largeLogo from "../../../images/logo-large.png";
+import mediumLogo from "../../../images/logo-medium.png";
 
 const Header = () => {
   const [logo, setLogo] = useState(largeLogo);

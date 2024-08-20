@@ -1,0 +1,27 @@
+.host {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  &__name {
+    text-align: right;
+    color: $main-accent-color;
+    font-size: 18px;
+    white-space: pre-wrap;
+    width: 90px; //fixed to allow name on two lines
+    word-break: break-word;
+    @include responsive(small) {
+      font-size: 12px;
+    }
+  }
+  &__picture {
+    width: 64px;
+    height: 64px;
+    padding-right: 2px; //sticks out to the right otherwise
+    border-radius: 50%;
+    @include responsive(small) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

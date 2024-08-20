@@ -1,0 +1,89 @@
+@keyframes arrowopen {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-180deg);
+    padding-left: 5px;
+  }
+}
+
+@keyframes arrowclose {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes contentreveal {
+  from {
+    transform: translateY(-50%); // at 100% starts over the top of the header!
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.collapse {
+  width: 100%;
+  max-width: 1024px;
+  border-radius: 5px;
+  overflow: hidden;
+  &__header {
+    height: 32px;
+    padding: 15px 10px;
+    color: white;
+    background-color: $main-accent-color;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    @include responsive(small) {
+      height: 10px;
+      padding: 10px;
+    }
+  }
+  &__title {
+    font-weight: $font-bold;
+    font-size: 24px;
+    @include responsive(small) {
+      font-size: 13px;
+    }
+  }
+  &__arrow {
+    cursor: pointer;
+    padding-right: 5px;
+    width: 24px;
+    @include responsive(small) {
+      width: 16px;
+    }
+    &--open {
+      animation: arrowopen 0.5s ease forwards;
+    }
+    &--close {
+      animation: arrowclose 0.5s ease;
+    }
+  }
+
+  &__content {
+    background-color: $background-medium-grey;
+    font-size: 18px;
+    font-weight: $font-regular;
+    padding: 16px 20px 19px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: block;
+
+    @include responsive(small) {
+      font-size: 12px;
+      padding-top: 13px;
+    }
+    &--open {
+      animation: contentreveal 0.5s ease;
+    }
+  }
+}

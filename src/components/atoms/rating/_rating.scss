@@ -1,0 +1,16 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px;
+  @include responsive(small) {
+    gap: 7px;
+    padding: 3px 2px;
+  }
+  &__star {
+    width: 24px;
+    @include responsive(small) {
+      width: 13px;
+    }
+  }
+}

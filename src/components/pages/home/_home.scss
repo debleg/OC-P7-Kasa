@@ -1,14 +1,8 @@
 .homepage {
-  margin: 0 100px;
-  @include responsive(medium) {
-    margin: 0 40px;
-  }
-  @include responsive(small) {
-    margin: 0 20px;
-  }
+  @include pagecontent();
 }
 
-.accomodation {
+.accommodation {
   background-color: $background-medium-grey;
   border-radius: 25px;
   margin-top: 43px;

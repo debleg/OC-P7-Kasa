@@ -1,0 +1,46 @@
+.errorpage {
+  @include pagecontent();
+  text-align: center;
+  color: $main-accent-color;
+  &__errortype {
+    font-size: 260px;
+    font-weight: bold;
+    padding: 139px 0;
+    @include responsive(large) {
+      font-size: 150px;
+    }
+    @include responsive(intermediate) {
+      font-size: 100px;
+      padding: 113px 0;
+    }
+  }
+  &__errormessage {
+    font-size: 36px;
+    @include responsive(large) {
+      font-size: 24px;
+    }
+    @include responsive(intermediate) {
+      font-size: 18px;
+    }
+    & br {
+      display: none;
+      @include responsive(small) {
+        display: inline;
+      }
+    }
+  }
+  &__redirectlink {
+    display: block;
+    padding: 139px 0;
+    text-decoration: underline;
+    color: black;
+    font-size: 18px;
+    @include responsive(large) {
+      font-size: 16px;
+    }
+    @include responsive(intermediate) {
+      font-size: 14px;
+      padding: 113px 0;
+    }
+  }
+}

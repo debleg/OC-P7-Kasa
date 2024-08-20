@@ -1,14 +1,19 @@
 @import //global
   "./resets",
-  "./responsive", "./typography", "./variables",
+  "./utils",
   //pages
-  "../components/pages/home",
-  "../components/pages/about", "../components/pages/error-page",
+  "../components/pages/home/home",
+  "../components/pages/about/about", "../components/pages/error/error-page",
+  "../components/pages/logement/logement",
   //organisms
-  "../components/organisms/header",
-  "../components/organisms/footer",
+  "../components/organisms/header/header",
+  "../components/organisms/footer/footer",
   //molecules
-  "../components/molecules/navigation",
+  "../components/molecules/navigation/navigation",
+  "../components/molecules/collapse/collapse",
+  "../components/molecules/slideshow/slideshow",
+  "../components/molecules/host/host",
   //atoms
-  "../components/atoms/banner",
-  "../components/atoms/card";
+  "../components/atoms/banner/banner",
+  "../components/atoms/card/card", "../components/atoms/tag/tag",
+  "../components/atoms/rating/rating";
