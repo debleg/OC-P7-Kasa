@@ -12,6 +12,7 @@
     word-break: break-word;
     @include responsive(small) {
       font-size: 12px;
+      width: 60px;
     }
   }
   &__picture {
