@@ -1,7 +1,7 @@
 .errorpage {
-  @include pagecontent();
-  text-align: center;
   color: $main-accent-color;
+  text-align: center;
+  @include pagecontent();
   &__errortype {
     font-size: 260px;
     font-weight: bold;
