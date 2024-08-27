@@ -3,23 +3,21 @@ import Logements from "../../../data/logements.json";
 import { Link } from "react-router-dom";
 
 const Card = () => {
-  const coverimage = Logements.map((accommodation) => ({
-    id: accommodation.id,
-    title: accommodation.title,
-    cover: accommodation.cover,
-  }));
-
   return (
     <>
-      {coverimage.map((accommodation, index) => (
+      {Logements.map((logement, index) => (
         <div className="card" key={index}>
-          <Link to={`logement/${accommodation.id}`} className="card__link">
-          <img
-            className="card__img"
-            alt={accommodation.title}
-            src={accommodation.cover}
-          />
-          <p className="card__title">{accommodation.title}</p>
+          <Link
+            to={`logement/${logement.id}`}
+            className="card__link"
+            state={{ logement: logement }}
+          >
+            <img
+              className="card__img"
+              alt={logement.title}
+              src={logement.cover}
+            />
+            <p className="card__title">{logement.title}</p>
           </Link>
         </div>
       ))}

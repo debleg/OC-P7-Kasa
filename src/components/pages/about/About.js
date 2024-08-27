@@ -27,18 +27,11 @@ const About = () => {
     <div className="aboutpage">
       <Banner bannerImg={AboutBanner} bannerImgBrightness="0.7" />
       <div className="aboutpage__content">
-        <Collapse title={aboutContent[0]["title"]}>
-          {aboutContent[0]["text"]}
-        </Collapse>
-        <Collapse title={aboutContent[1]["title"]}>
-          {aboutContent[1]["text"]}
-        </Collapse>
-        <Collapse title={aboutContent[2]["title"]}>
-          {aboutContent[2]["text"]}
-        </Collapse>
-        <Collapse title={aboutContent[3]["title"]}>
-          {aboutContent[3]["text"]}
-        </Collapse>
+        {aboutContent.map((content, index) => (
+          <Collapse key={index} title={content.title}>
+            {content.text}
+          </Collapse>
+        ))}
       </div>
     </div>
   );

@@ -16,15 +16,12 @@ const Header = () => {
       }
     };
 
-    // Initial check
     updateLogo();
 
-    // Add event listener
     window.addEventListener("resize", updateLogo);
 
-    // Cleanup event listener on component unmount
     return () => window.removeEventListener("resize", updateLogo);
-  }, []); // Empty dependency array to run only on mount and unmount
+  }, []);
 
   return (
     <div className="header">
