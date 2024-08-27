@@ -1,3 +1,26 @@
+# Repository guidelines
+
+## Folder structure
+
+### Components
+
+This repository primarily uses the [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) principles as a guide for its folder structure.
+
+The Component folder is divided in **Atoms** (the smallest possible unit), **Molecules**, **Organisms**, and **Pages** (which could be seen as biomes where the rest of the units 'live'), wherein each component has its own folder containing the respective files.
+
+### Global
+
+Within the src folder that contains the above Component folder are also the following:
+
+- an **image folder** grouping all local resources for ease of navigation,
+- a **data folder** containing the json file placeholder,
+- a **styles folder** containing the index.scss* and the global partials (component partials can be found in the component folders they relate to).
+
+*_All components are styled using Sass/Scss._
+
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
